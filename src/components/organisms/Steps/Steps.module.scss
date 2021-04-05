@@ -1,0 +1,79 @@
+.Step1 {
+  position: relative;
+  border: 2px solid grey;
+  border-radius: 8px;
+
+  height: 100%;
+  .mainHeading {
+    text-align: center;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-left: 7%;
+  margin-bottom: 10%;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .description {
+    text-align: start;
+    font-size: 17px;
+  }
+  .container {
+    color: rgb(104, 98, 98);
+    font-size: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .button {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    .or {
+      margin-left: 10px;
+      margin-top: 6%;
+    }
+    .cancel {
+      margin-top: 6%;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .field {
+    .inputContainer {
+      display: flex;
+      margin-bottom: 10%;
+    }
+  }
+  .score {
+    width: 100%;
+    h1 {
+      font-size: 25px;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+  .startOver {
+    display: flex;
+    margin-top: 10%;
+    .startOverBtn {
+      outline: none;
+      width: 120%;
+      height: 40px;
+      border-radius: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

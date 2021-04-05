@@ -28,26 +28,22 @@ export interface InputProps {
 }
 
 export interface InputBlockProps extends InputProps {
-  label?: string;
+  label: string;
 }
 
 export interface RadioProps {
   type: string;
-  name: string; 
+  id: string | undefined;
+  name: string;
   value?: string | number | readonly string[];
   checked: boolean;
+  label?: string;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
 }
-
-export interface RadioButtonBlockProps extends RadioProps {
-  label?: string;
-}
-
 export interface CardProps {
   border?: string;
   children?: string;
 }
-
 
 export interface ImageProps {
   src: string;

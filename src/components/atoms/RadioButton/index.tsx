@@ -1,6 +1,5 @@
 import React from 'react';
 
-import styles from './Button.module.scss';
 import { RadioProps } from '../../../EnumAndInterface/interface';
 
 const RadioButton: React.FC<RadioProps> = ({
@@ -8,11 +7,21 @@ const RadioButton: React.FC<RadioProps> = ({
   name,
   value,
   checked,
+  id,
+  label,
   onChange,
 }) => {
   return (
-    <input type={type} name={name} value={value} checked={checked} onChange={onChange}>
-    </input>
+    <>
+      <input
+        id={id}
+        type={type}
+        name={name}
+        value={value}
+        checked={checked}
+        onChange={onChange}></input>
+      <label htmlFor={id}>{label}</label>
+    </>
   );
 };
 
